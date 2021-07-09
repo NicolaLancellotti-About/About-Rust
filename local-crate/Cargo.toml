@@ -1,0 +1,6 @@
+[package]
+name = "local-crate"
+version = "0.1.0"
+authors = ["Nicola Lancellotti"]
+
+[dependencies]

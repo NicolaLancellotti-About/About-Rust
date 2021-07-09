@@ -1,0 +1,37 @@
+#_______________________________________________________
+[package]
+name = "about-rust"
+version = "1.0.0"
+authors = ["Nicola Lancellotti <nlancellotti@me.com>"]
+edition = "2018"
+#_______________________________________________________
+[workspace]
+
+#_______________________________________________________
+[dependencies]
+local-crate = {path = "local-crate"}
+time = "0.1.12"
+
+#_______________________________________________________
+[lib]
+name = "lib"
+path = "src/lib/mod.rs"
+
+#[[bin]]
+#name = "bin"
+#path = "src/bin/main.rs"
+
+#_______________________________________________________
+# Optimizations
+#[profile.dev]
+#opt-level = 0
+#
+#[profile.release]
+
+#_______________________________________________________
+[features]
+foo = []
+
+#_______________________________________________________
+[build-dependencies]
+gcc = "0.3"
